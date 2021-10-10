@@ -2,4 +2,4 @@
 
 Proyecto 1 Graficas
 
-Abrir **a.bmp**
+Resultado en a.bmp
