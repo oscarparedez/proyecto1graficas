@@ -2,4 +2,4 @@
 
 Proyecto 1 Graficas
 
-Resultado en a.bmp
+![](https://github.com/oscarparedez/proyecto1graficas/proyecto1/a.bmp)
