@@ -2,4 +2,4 @@
 
 Proyecto 1 Graficas
 
-![](https://ibb.co/KytyC6w)
+![](https://github.com/oscarparedez/proyecto1graficas/blob/main/proyecto1/a.bmp)
