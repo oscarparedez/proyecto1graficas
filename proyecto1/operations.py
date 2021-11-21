@@ -1,4 +1,4 @@
-#Se utilizo como referencia para algunas operaciones https://stackoverflow.com/questions/32114054/matrix-inversion-without-numpy
+# ------------Se utilizo como referencia para algunas operaciones https://stackoverflow.com/questions/32114054/matrix-inversion-without-numpy
 import struct
 
 def frombuffer(array, dtype):
@@ -7,8 +7,14 @@ def frombuffer(array, dtype):
         newarray.append(element)
     return newarray
 
-def det2(m):
-    return m[0][0] * m[1][1] - m[0][1] * m[1][0]
+def det2(mat):
+    return mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0]
+
+def det(mat):
+    det = 0
+    for i in range(len(mat)):
+        determinant += ((-1)**i)*mat[0][i]*det(identity(mat))
+    return determinant
 
 def inverse2(mat):
     det = det2(mat)
@@ -30,6 +36,11 @@ def dot(mat1, mat2):
             vec.append(operation)
         product.append(vec)
     return product
+
+
+#def dot(mat1, mat2):
+#    return sum(x*y for x, y in zip(mat1, mat2))
+
 
 def trasponse(mat):
     for i in range(len(mat[0])):
